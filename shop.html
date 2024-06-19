@@ -15,6 +15,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./shop.css" />
+ 
   </head>
   <body>
     <section class="app-header">
@@ -78,6 +80,370 @@
       </section>
     </section>
 
+
+
+
+<section class="shop-container">
+  <div class="shop-lists">
+    <div class="shop-header">
+          <h2>Search</h2>
+
+          <div class="shop-line"></div>
+
+        </div>
+
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Search Products..."
+        />
+        <button>Search</button>
+
+        <div class="shop-category">
+          <h2>Category
+            <span class="shop-line"></span>
+          </h2>
+          <ul>
+<li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+         Accessories
+              </a>
+              (2)
+            </li>
+
+
+
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+            Cameras, Audio & Video
+              </a>
+              (2)
+            </li>
+
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+             Car, Motorbikes & Industrial
+              </a>
+              (0)
+            </li>
+
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+          Computer & Accessories
+              </a>
+              (1)
+            </li>
+
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+               Headphones and Speakers
+              </a>
+              (0)
+            </li>
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+           Laptops and Tablets
+              </a>
+              (1)
+            </li>
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+            Smart Home
+              </a>
+              (5)
+            </li>
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+              Smartphones and phones
+              </a>
+              (0)
+            </li>
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+             TV and Display
+              </a>
+              (0)
+            </li>
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+             Uncategorized
+              </a>
+              (0)
+            </li>
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+             Watches & Eyewear
+              </a>
+              (1)
+            </li>
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+                White EliteBook Tablet 810
+              </a>
+              (4)
+            </li>
+          </ul>
+        </div>
+
+        <div class="shop-category brand">
+          <h2>Brand
+          <span class="shop-line"></span>
+          </h2>
+          <ul>
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+                Apple
+              </a>
+              (14)
+            </li>
+
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+               Bosch
+              </a>
+              (14)
+            </li>
+
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+                Huawei
+              </a>
+              (14)
+            </li>
+
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+                LG
+              </a>
+              (14)
+            </li>
+
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+            Samsung
+              </a>
+              (14)
+            </li>
+
+            <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+            Sony
+              </a>
+              (14)
+            </li>
+
+
+             <li>
+              <a href="#">
+                <input
+                  type="checkbox"
+                  name="product-check"
+                  id="product-check"
+                />
+         Xiaomi
+              </a>
+              (14)
+            </li>
+          </ul>
+        </div>
+  </div>
+
+
+
+  <div class="shop-contents">
+    <div class="shop-contents-header">
+      <h2>Featured Products</h2>
+      <div class="shop-line"></div>
+      <div>
+            <select name="sort" id="sort">
+              <option value="Default">Sort By: Default</option>
+
+              <option value="popularity">Sort By: popularity</option>
+              <option value="rating">Sort By: rating</option>
+              <option value="new">Sort By: newness</option>
+              <option value="low">Sort By: low price</option>
+              <option value="high">Sort By: high price</option>
+            </select>
+    </div>
+    </div>
+
+<div class="shop-products-container">
+  <div class="shop-products">
+ <img src="./images/drone2.png" alt="White Drone" width="200" id="drone" >
+          <h3>Extra Thick Super
+            <br>
+            Absorbent...</h3>
+          <h5>Smart Home
+          <div>⭐⭐⭐⭐⭐</div>
+          </h5>
+
+
+          <div class="shop-price-container">
+          <div class="shop-price">
+          <h2>$790</h2>
+          <p>$1,300</p>
+        </div>
+        
+          <div id="shop-cart" >
+            <a href="./cart.html">Add to Cart</a>
+           <i class="fa-solid fa-bag-shopping shop-cart-icon"></i>
+           </div>
+          </div>
+   </div>
+
+
+  <div class="shop-products">
+ <img src="./images/drone2.png" alt="White Drone" width="200" id="drone" >
+          <h3>Extra Thick Super
+            <br>
+            Absorbent...</h3>
+          <h5>Smart Home
+          <div>⭐⭐⭐⭐⭐</div>
+          </h5>
+
+
+          <div class="shop-price-container">
+          <div class="shop-price">
+          <h2>$790</h2>
+          <p>$1,300</p>
+        </div>
+        
+          <div id="shop-cart" >
+            <a href="./cart.html">Add to Cart</a>
+           <i class="fa-solid fa-bag-shopping shop-cart-icon"></i>
+           </div>
+          </div>
+   </div>
+
+
+
+
+  <div class="shop-products">
+ <img src="./images/drone2.png" alt="White Drone" width="200" id="drone" >
+          <h3>Extra Thick Super
+            <br>
+            Absorbent...</h3>
+          <h5>Smart Home
+          <div>⭐⭐⭐⭐⭐</div>
+          </h5>
+
+
+          <div class="shop-price-container">
+          <div class="shop-price">
+          <h2>$790</h2>
+          <p>$1,300</p>
+        </div>
+        
+          <div id="shop-cart" >
+            <a href="./cart.html">Add to Cart</a>
+           <i class="fa-solid fa-bag-shopping shop-cart-icon"></i>
+           </div>
+          </div>
+   </div>
+
+
+
+
+
+
+
+
+</div>
+
+
+  </div>
+</section>
 
 
 

@@ -1,0 +1,179 @@
+.shop-container {
+  display: flex;
+  gap: 50px;
+  padding: 40px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.shop-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 0 0 250px;
+}
+
+.shop-header,
+.shop-category h2,
+.shop-contents-header {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-header h2,
+.shop-category h2 {
+  font-size: 17px;
+  font-family: "Nunito", sans-serif;
+}
+
+.shop-line {
+  border: 0.1px solid #e9ecea;
+  width: 250px;
+}
+
+.shop-lists input {
+  background-color: #e7e9ec;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.shop-lists button {
+  color: white;
+  width: 250px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 0px;
+  background-color: #30c7be;
+  border: 1px solid #30c7be;
+}
+
+.shop-category {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-category ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.shop-category input {
+  margin-right: 5px;
+}
+
+.shop-category input[type="checkbox"]:hover {
+  color: rgb(251, 60, 60);
+}
+
+.shop-category li {
+  display: flex;
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.shop-category li a {
+  text-decoration: none;
+  color: rgb(108, 111, 113);
+}
+
+.shop-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-contents-header h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+}
+
+.shop-products-container {
+  display: flex;
+  gap: 30px;
+}
+
+.shop-products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  border-right: 0.1px solid #ababab;
+}
+
+.shop-products:hover {
+  border: 2px solid #00c7a0;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+#drone {
+  transition: all ease 1s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#drone:hover {
+  transform: scale(1.1);
+}
+
+.shop-products h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+}
+
+.shop-products h5 {
+  color: #ababab;
+}
+
+.shop-price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.shop-price {
+  display: flex;
+  gap: 10px;
+}
+
+.shop-price h2 {
+  color: #30c7be;
+}
+
+.shop-price p {
+  text-decoration: line-through;
+  color: #ababab;
+}
+
+#shop-cart {
+  border: 1px solid #e8f7f6;
+  color: #30c7be;
+  display: flex;
+  background-color: #e8f7f6;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  width: 170px;
+  align-items: center;
+  font-size: 15px;
+}
+
+#shop-cart a {
+  text-decoration: none;
+  color: #30c7be;
+  font-weight: 600;
+}
+
+.shop-cart-icon {
+  background-color: #30c7be;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+}
