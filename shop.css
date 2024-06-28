@@ -67,10 +67,6 @@
   margin-right: 5px;
 }
 
-.shop-category input[type="checkbox"]:hover {
-  color: rgb(251, 60, 60);
-}
-
 .shop-category li {
   display: flex;
   padding: 0px 20px;
@@ -94,9 +90,17 @@
   font-size: 30px;
 }
 
+#sort {
+  background-color: #000000;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px;
+}
+
 .shop-products-container {
   display: flex;
   gap: 30px;
+  margin-top: 50px;
 }
 
 .shop-products {
@@ -105,22 +109,14 @@
   gap: 20px;
   justify-content: center;
   border-right: 0.1px solid #ababab;
+  padding: 20px;
 }
 
 .shop-products:hover {
   border: 2px solid #00c7a0;
   border-radius: 20px;
   padding: 40px;
-}
-
-#drone {
-  transition: all ease 1s;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-#drone:hover {
-  transform: scale(1.1);
+  box-shadow: 2px 2px 2px #30c7be;
 }
 
 .shop-products h3 {
@@ -176,4 +172,97 @@
   color: #ffffff;
   border-radius: 50%;
   padding: 10px;
+}
+
+.shop-pages {
+  display: flex;
+  gap: 20px;
+  padding: 40px 100px;
+  font-family: "Quicksand", sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.shop-pages-number {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-pages-number:hover,
+.first:hover {
+  background-color: #30c7be;
+  color: white;
+  border: 1px solid #30c7be;
+}
+
+.first {
+  border: 1px solid black;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .shop-container {
+    flex-direction: column-reverse;
+    padding: 30px;
+  }
+
+  .shop-header,
+  .shop-category h2 {
+    justify-content: flex-start;
+    gap: 60px;
+  }
+
+  .shop-contents-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .shop-contents-header .shop-line {
+    display: none;
+  }
+
+  .shop-lists button {
+    width: 550px;
+  }
+
+  .shop-products-container {
+    flex-direction: column;
+  }
+
+  .shop-products {
+    border-right: none;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+
+  .shop-products img {
+    width: 500px;
+    transition: all ease 1s;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .shop-products img:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .shop-products img {
+    width: 300px;
+  }
 }
