@@ -145,3 +145,92 @@
   font-weight: 600;
   font-size: 12px;
 }
+
+@media screen and (max-width: 768px) {
+  .cart-container {
+    flex-direction: column;
+  }
+
+  .bag-details-header {
+    width: 550px;
+    gap: 43px;
+  }
+
+  .bag-details {
+    width: 550px;
+  }
+
+  .bag-details img {
+    width: 100px;
+  }
+
+  .coupon-container {
+    gap: 80px;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+  }
+
+  .coupon {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    gap: 30px;
+  }
+
+  .coupon-container button {
+    width: 550px;
+  }
+
+  .subtotal {
+    width: 550px;
+  }
+
+  .total {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .bag-details-header {
+    display: none;
+  }
+
+  .bag-details {
+    flex-direction: column;
+    width: 340px;
+    height: 400px;
+    gap: 10px;
+    margin-top: 40px;
+  }
+
+  .bag-details img {
+    width: 100px;
+  }
+
+  .coupon-container {
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    gap: 80px;
+  }
+
+  .coupon {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    gap: 30px;
+  }
+
+  .coupon-container button {
+    width: 340px;
+  }
+
+  .subtotal {
+    width: 340px;
+  }
+
+  .total {
+    width: 340px;
+  }
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronic Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Beau+Rivage&family=Cookie&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script&family=Hind+Siliguri:wght@300;400;500;600;700&family=Josefin+Sans:wght@100;200;300;400&family=Laila&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@300;400;500&family=Oxygen&family=Oxygen+Mono&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&family=Quicksand:wght@300..700&family=Red+Hat+Mono&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0e0646af9d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+        <link rel="stylesheet" href="./checkout.css" />
+  </head>
+  <body>
+    <section class="app-header">
+      <nav class="nav-container">
+        <div class="nav-lists">
+          <img src="./images/logo2.png" alt="Logo" />
+          <i class="fa-solid fa-bars"></i>
+          <ul class="nav-items">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="nav-contacts">
+          <div class="nav-contacts-info">
+            <i class="fa-regular fa-envelope"></i>
+            <p>info@phlox.pro</p>
+          </div>
+          <div class="nav-contacts-info">
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>909 25468 546</p>
+          </div>
+        </div>
+      </nav>
+
+      <section class="app-filter">
+        <div class="nav-category-container">
+          <div class="nav-category">
+            <i class="fa-solid fa-bars"></i>
+            Shop By Category
+          </div>
+
+          <div class="nav-input">
+            <input
+              type="text"
+              placeholder="Type Here..."
+              class="search-input"
+              name=""
+              id=""
+            />
+            <div class="search-container">
+              <button>Search</button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-signup">
+          <div class="nav-signup-info">
+            <i class="fa-regular fa-user"></i>
+            <p>Login / sign up</p>
+          </div>
+
+          <div class="nav-signup-info">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p id="number">0</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+
+
+
+    <section class="checkout-header">
+        <div>Have a coupon?</div>
+        <div class="coupon-code"><a href="">Click here to enter your code</a></div>
+    </section>
+
+
+    <section class="checkout-container">
+        <div class="billing-container">
+            <header>Billing details</header>
+             <form>
+        <div>
+            <label for="firstname" class="required">First name</label>
+            <input type="text" name="firstname" id="firstname" required>
+        </div>
+
+
+<div>
+            <label for="firstname" class="required">Last name</label>
+            <input type="text" name="firstname" id="firstname" required>
+        </div>
+
+
+        <div>
+            <label for="firstname">Company name (optional)</label>
+            <input type="text" name="firstname" id="firstname" >
+        </div>
+
+         <div>
+            <label for="firstname" class="required">Country / Region</label>
+            <select id="country" name="country" required>
+                <option value="">--Select Country--</option>
+<option value="uk">United Kingdom (UK) </option>
+                <option value="ng">Nigeria</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="au">Australia</option>
+                <option value="in">India</option>
+            </select>
+        </div>
+
+
+
+ <div>
+            <label for="firstname" class="required">Street address</label>
+            <input type="text" name="firstname" id="firstname" placeholder="House number and street name" required>
+             <input type="text" name="firstname" id="firstname" placeholder="Apartment, suite, unit, etc (optional)" >
+        </div>
+
+
+
+         <div>
+            <label for="firstname" class="required">Town / City</label>
+            <input type="text" name="firstname" id="firstname" required>
+        </div>
+
+
+ <div>
+            <label for="firstname" >County</label>
+            <input type="text" name="firstname" id="firstname">
+        </div>
+
+
+         <div>
+            <label for="firstname" class="required">Postcode</label>
+            <input type="text" name="firstname" id="firstname" required>
+        </div>
+
+         <div>
+            <label for="firstname" class="required">Phone</label>
+            <input type="number" name="firstname" id="firstname" required>
+        </div>
+
+         <div>
+            <label for="firstname" class="required">Email address</label>
+            <input type="email" name="firstname" id="firstname" required>
+        </div>
+        </form>
+
+  <header>Additional information</header>
+  <div class="order-note">Order notes (optional)</div>
+   <textarea name="note" id="note" cols="40" rows="10" required>
+Notes about your order, e.g. special notes for delivery.</textarea>
+        </div>
+
+
+
+        <div class="order-container">
+            <header>Your Order</header>
+
+            <div class="order-totals">
+                <div class="order-totals-header">
+                    <div>Product</div>
+                    <div>Subtotal</div>
+                </div>
+                <div class="order-details">
+                <img src="./images/drone2.png" alt="Drone" width="150">
+                <div>Extra Thick Super Absorbent...  × 1</div>
+                <div id="price">$790</div>
+</div>
+
+<div class="order-subtotal">
+    <div>subTotal</div>
+    <div>$790</div>
+</div>
+
+<div class="order-total">
+    <div>Total</div>
+    <div id="order-price">$790</div>
+</div>
+            </div>
+
+            <div class="warning-container">
+            <div class="warning">Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements.</div>
+            <button><a href="">PLACE ORDER </a></button>
+</div>
+
+        </div>
+    </section>
+
+
+
+<section class="all-site-info">
+  <div class="all-site-info-content">
+    <div class="site-description">
+      <img src="./images/logo2.png" alt="logo" width="80">
+    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some formed humour </p>
+    </div>
+
+    <div class="meet-phlox">
+      <div class="meet-phlox-header">Meet Phlox</div>
+      <ul class="meet-phlox-lists">
+        <li><a href="./index.html">Home</a></li>
+         <li><a href="./about.html">About</a></li>
+          <li><a href="./index.html">Features</a></li>
+           <li><a href="./contact.html">Team</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+             <li><a href="./about.html">Our Ecosystem</a></li>
+      </ul>
+    </div>
+
+
+    <div class="meet-phlox quick-links">
+    <div class="meet-phlox-header ">Quick Link</div>
+      <ul class="meet-phlox-lists">
+        <li><a href="./blog.html">News</a></li>
+         <li><a href="./blog.html">Article</a></li>
+          <li><a href="./contact.html">Help Center</a></li>
+           <li><a href="./contact.html">Careers</a></li>
+            <li><a href="./contact.html">License</a></li>
+             <li><a href="./about.html">Freebies</a></li>
+      </ul></div>
+
+
+    <div class="meet-phlox category-links">
+<div class="meet-phlox-header">Category Link</div>
+      <ul class="meet-phlox-lists">
+        <li><a href="./index.html">Graphics</a></li>
+         <li><a href="./about.html">Video</a></li>
+          <li><a href="./index.html">Presentation</a></li>
+           <li><a href="./contact.html">Photos</a></li>
+            <li><a href="./contact.html">Fonts</a></li>
+             <li><a href="./about.html">Web template</a></li>
+      </ul>
+    </div>
+
+
+
+    <div class="follow-us">
+      <div class="follow-us-header">Follow Us</div>
+      <div class="follow-us-icons"> 
+         <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-behance"></i>
+         <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-facebook"></i>
+              </div>
+
+              <div class="subscribe">
+                      <div class="follow-us-header">Subscribe</div>
+                      <p>Send me tips, trends, freebies, updates & offers.</p>
+
+               <div class="nav-input">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="search-input"
+              name=""
+              id=""
+            />
+            <div class="search-container">
+              <button>Subscribe</button>
+                </div>        
+              </div>
+    </div>
+  </div>
+ </section>
+
+
+
+ <section class="site-privacy">
+    <div>© 2024 Electronic Shop - Phlox Elementor Wordpress Theme. All rights reserved.</div>
+    <div>Term And Conditions   |   Privacy</div>
+  </section>
+
+
+    <script src="./index.js"></script>
+    </body>
+</html>
